@@ -5,7 +5,7 @@
 
 Clone this repo
 ```bash
-git clone sap-ui15-react-app
+git clone https://github.com/neerajsahni-immanent/sap-ui15-react-app.git
 ```
 
 First, install the `node_modules`:
