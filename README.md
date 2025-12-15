@@ -1,13 +1,12 @@
 # UI5 Web Components for React - Vite + TypeScript Template
 
-## How to use this template
-
-```bash
-npx degit UI5/webcomponents-react/templates/vite-ts#main my-project
-cd my-project
-```
 
 ## Getting Started
+
+Clone this repo
+```bash
+git clone sap-ui15-react-app
+```
 
 First, install the `node_modules`:
 
