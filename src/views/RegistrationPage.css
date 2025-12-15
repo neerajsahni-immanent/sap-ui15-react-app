@@ -1,0 +1,191 @@
+/**
+ * Registration Page Styles
+ * Responsive layout with centered card design
+ */
+
+.registration-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem;
+}
+
+.registration-page__container {
+  width: 100%;
+  max-width: 500px;
+}
+
+.registration-page__card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  padding: 2rem;
+  animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.registration-page__header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.registration-page__title {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.registration-page__subtitle {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.registration-page__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.registration-page__password-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.registration-page__strength {
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.registration-page__strength-bar {
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.registration-page__strength-fill {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.registration-page__strength-text {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.registration-page__show-password {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0 0.5rem;
+  margin: -0.5rem 0 0.5rem;
+}
+
+.registration-page__show-password input[type='checkbox'] {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
+
+.registration-page__show-password label {
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0;
+}
+
+.registration-page__actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.registration-page__actions button {
+  flex: 1;
+  min-height: 44px;
+  width: 100%;
+}
+
+.registration-page__success {
+  padding: 1rem;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 4px;
+  color: #155724;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.registration-page__footer {
+  text-align: center;
+  margin-top: 1.5rem;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1.5rem;
+}
+
+.registration-page__footer p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.registration-page__link {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.registration-page__link:hover {
+  color: #0052a3;
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .registration-page__card {
+    padding: 1.5rem;
+  }
+
+  .registration-page__title {
+    font-size: 1.5rem;
+  }
+
+  .registration-page__actions {
+    flex-direction: column;
+  }
+
+  .registration-page__actions button {
+    width: 100%;
+  }
+}

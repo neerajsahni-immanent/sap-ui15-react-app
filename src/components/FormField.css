@@ -1,0 +1,64 @@
+/**
+ * FormField Component Styles
+ * SAP-UI5 design-inspired styling
+ */
+
+.form-field {
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%;
+}
+
+.form-field--error .form-field__input {
+  border-color: #dc3545 !important;
+  background-color: #fff5f5;
+}
+
+.form-field__input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #d1d1d1;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-field__input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.1);
+}
+
+.form-field__input:disabled {
+  background-color: #f5f5f5;
+  color: #666;
+  cursor: not-allowed;
+}
+
+.form-field__input--error {
+  border-color: #dc3545;
+  background-color: #fff5f5;
+}
+
+.form-field__input--error:focus {
+  box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.1);
+}
+
+.form-field__error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #dc3545;
+}
+
+.form-field__error-icon {
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+
+.form-field__error-text {
+  line-height: 1.4;
+}
